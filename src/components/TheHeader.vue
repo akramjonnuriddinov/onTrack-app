@@ -6,7 +6,7 @@ const emit = defineEmits(['goToTimeline', 'goToProgress'])
 </script>
 
 <template>
-  <header class="sticky top-0 flex items-center justify-between p-3 bg-white border-b">
+  <header class="sticky top-0 z-50 flex items-center justify-between p-3 bg-white border-b">
     <TheLogo @click="emit('goToTimeline')" />
     <TheHeaderProgress @click="emit('goToProgress')" />
   </header>
