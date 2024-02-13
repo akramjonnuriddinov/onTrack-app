@@ -7,7 +7,7 @@ import { CheckCircleIcon } from '@heroicons/vue/24/solid'
   <a :href="`#${PAGE_PROGRESS}`">
     <div v-if="false" class="flex items-center gap-1">
       Day complete!
-      <CheckCircleIcon class="text-green-500 h-7" />
+      <check-circle-icon class="text-green-500 h-7" />
     </div>
     <div v-else class="flex items-center gap-1">
       <div>Progress: <span class="font-mono">20%</span></div>

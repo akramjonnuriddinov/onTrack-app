@@ -7,7 +7,7 @@ defineProps(['timelineItems'])
 <template>
   <div class="mt-7">
     <ul>
-      <TimelineItem
+      <timeline-item
         v-for="timelineItem in timelineItems"
         :key="timelineItem.hour"
         :timeline-item="timelineItem"

@@ -17,11 +17,11 @@ function goTo(page) {
 </script>
 
 <template>
-  <TheHeader @go-to-timeline="goTo(PAGE_TIMELINE)" @go-to-progress="goTo(PAGE_PROGRESS)" />
+  <the-header @go-to-timeline="goTo(PAGE_TIMELINE)" @go-to-progress="goTo(PAGE_PROGRESS)" />
   <main class="flex flex-col flex-grow">
-    <TheTimeline v-show="currentPage === PAGE_TIMELINE" :timeline-items="timelineItems" />
-    <TheActivities v-show="currentPage === PAGE_ACTIVITIES" />
-    <TheProgress v-show="currentPage === PAGE_PROGRESS" />
+    <the-timeline v-show="currentPage === PAGE_TIMELINE" :timeline-items="timelineItems" />
+    <the-activities v-show="currentPage === PAGE_ACTIVITIES" />
+    <the-progress v-show="currentPage === PAGE_PROGRESS" />
   </main>
-  <TheNav :current-page="currentPage" @navigate="goTo($event)" />
+  <the-nav :current-page="currentPage" @navigate="goTo($event)" />
 </template>

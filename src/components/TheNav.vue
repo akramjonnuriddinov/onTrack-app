@@ -9,7 +9,7 @@ const emit = defineEmits(['navigate'])
 <template>
   <nav class="sticky bottom-0 z-10 bg-white">
     <ul class="flex items-center justify-around border-t">
-      <NavItem
+      <nav-item
         v-for="(icon, page) in NAV_ITEMS"
         :key="page"
         :page="page"
@@ -17,7 +17,7 @@ const emit = defineEmits(['navigate'])
         @click="emit('navigate', page)"
       >
         <component :is="icon" class="w-6 h-6" /> {{ page }}
-      </NavItem>
+      </nav-item>
     </ul>
   </nav>
 </template>
