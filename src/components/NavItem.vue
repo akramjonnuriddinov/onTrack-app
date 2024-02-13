@@ -1,5 +1,10 @@
 <script setup>
-defineProps(['page'])
+defineProps({
+  page: {
+    required: true,
+    type: String
+  }
+})
 </script>
 
 <template>
