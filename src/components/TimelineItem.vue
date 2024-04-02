@@ -24,8 +24,6 @@ const options = [
   { value: 3, label: 'Training' }
 ]
 
-//
-
 const selectedActivityId = 2
 </script>
 
